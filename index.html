@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympia Gym</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button id="themeToggle" class="theme-toggle">🌞/🌙</button>
+<a href="https://wa.me/201000000000" class="whatsapp" target="_blank">WhatsApp</a>
+
+<nav>
+    <h1>Olympia</h1>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#bmi">BMI</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="hero reveal">
+    <div class="hero-content">
+        <h2>Build Your Body</h2>
+        <p>Men & Women Gym - Start Today</p>
+        <button>Join Now</button>
+    </div>
+</section>
+
+<section class="stats reveal">
+    <div class="stat">
+        <h2 class="counter" data-target="1200">0</h2>
+        <p>Members</p>
+    </div>
+    <div class="stat">
+        <h2 class="counter" data-target="15">0</h2>
+        <p>Trainers</p>
+    </div>
+    <div class="stat">
+        <h2 class="counter" data-target="5">0</h2>
+        <p>Years Experience</p>
+    </div>
+</section>
+
+<section id="plans" class="pricing reveal">
+    <h2>Membership Plans</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Basic</h3>
+            <p class="price">300 EGP</p>
+            <p>1 Month</p>
+        </div>
+        <div class="card">
+            <h3>Standard</h3>
+            <p class="price">800 EGP</p>
+            <p>3 Months</p>
+        </div>
+        <div class="card pro">
+            <h3>Pro</h3>
+            <p class="price">2500 EGP</p>
+            <p>1 Year</p>
+        </div>
+    </div>
+</section>
+
+<section id="trainers" class="trainers reveal">
+    <h2>Our Trainers</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Ahmed</h3>
+            <p>Bodybuilding Coach</p>
+        </div>
+        <div class="card">
+            <h3>Sara</h3>
+            <p>Fitness Trainer</p>
+        </div>
+        <div class="card">
+            <h3>Omar</h3>
+            <p>Weight Loss Expert</p>
+        </div>
+    </div>
+</section>
+
+<section id="bmi" class="bmi reveal">
+    <h2>BMI Calculator</h2>
+    <input type="number" id="weight" placeholder="Weight (kg)">
+    <input type="number" id="height" placeholder="Height (cm)">
+    <button onclick="calcBMI()">Calculate</button>
+    <h3 id="result"></h3>
+</section>
+
+<section id="login" class="login reveal">
+    <h2>Member Login</h2>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button>Login</button>
+</section>
+
+<section id="contact" class="contact reveal">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="text" placeholder="Phone Number" required>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
