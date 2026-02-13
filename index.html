@@ -8,9 +8,13 @@
 </head>
 <body>
 
+<!-- Dark/Light Toggle -->
 <button id="themeToggle" class="theme-toggle">🌞/🌙</button>
-<a href="https://wa.me/201000000000" class="whatsapp" target="_blank">WhatsApp</a>
 
+<!-- WhatsApp Button -->
+<a href="https://wa.me/201556507666" class="whatsapp" target="_blank">WhatsApp</a>
+
+<!-- Navbar -->
 <nav>
     <h1>Olympia</h1>
     <ul>
@@ -23,14 +27,23 @@
     </ul>
 </nav>
 
+<!-- Hero -->
 <section id="home" class="hero reveal">
     <div class="hero-content">
         <h2>Build Your Body</h2>
         <p>Men & Women Gym - Start Today</p>
-        <button>Join Now</button>
+
+        <!-- Join Form (المكان الصح) -->
+        <form id="joinForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="tel" id="phone" placeholder="Your Phone" required>
+            <button type="submit">Join Now</button>
+        </form>
+
     </div>
 </section>
 
+<!-- Stats -->
 <section class="stats reveal">
     <div class="stat">
         <h2 class="counter" data-target="1200">0</h2>
@@ -46,6 +59,7 @@
     </div>
 </section>
 
+<!-- Plans -->
 <section id="plans" class="pricing reveal">
     <h2>Membership Plans</h2>
     <div class="cards">
@@ -67,24 +81,26 @@
     </div>
 </section>
 
+<!-- Trainers -->
 <section id="trainers" class="trainers reveal">
     <h2>Our Trainers</h2>
     <div class="cards">
         <div class="card">
-            <h3>Ahmed</h3>
+            <h3>coach Ahmed AbdElsalam</h3>
             <p>Bodybuilding Coach</p>
         </div>
         <div class="card">
-            <h3>Sara</h3>
+            <h3>coach olfet</h3>
             <p>Fitness Trainer</p>
         </div>
         <div class="card">
-            <h3>Omar</h3>
+            <h3>coach youssef</h3>
             <p>Weight Loss Expert</p>
         </div>
     </div>
 </section>
 
+<!-- BMI Calculator -->
 <section id="bmi" class="bmi reveal">
     <h2>BMI Calculator</h2>
     <input type="number" id="weight" placeholder="Weight (kg)">
@@ -93,6 +109,7 @@
     <h3 id="result"></h3>
 </section>
 
+<!-- Login -->
 <section id="login" class="login reveal">
     <h2>Member Login</h2>
     <input type="text" placeholder="Username">
@@ -100,6 +117,7 @@
     <button>Login</button>
 </section>
 
+<!-- Contact -->
 <section id="contact" class="contact reveal">
     <h2>Contact Us</h2>
     <form>
@@ -109,6 +127,8 @@
     </form>
 </section>
 
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
